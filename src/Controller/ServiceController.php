@@ -25,7 +25,7 @@ class ServiceController extends AbstractController
 
     }
 
-    #[Route("/go")]
+    #[Route("serviceGoTo",name:"redirect_to")]
     function goToIndex():Response
     {
         return $this->redirect("home");
